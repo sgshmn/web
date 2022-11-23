@@ -1,0 +1,17 @@
+table{
+    width : 400px;
+}
+.title{
+    background-color : gray;
+    height : 50px;
+}
+.detail{
+    background-color : whitesmoke;
+    height: 35px;
+}
+td:first-child{
+    text-align: right;
+}
+tr:last-child>td{
+    text-align: center;
+}

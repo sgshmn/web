@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 객체 생성방법. object인데 다른 언어의 object와는 달라보인다. 
+        var obj = {
+            name : "yw",
+            age : 20,
+            sex : "male"
+        }
+
+        console.log(obj)
+        console.log(obj.name) // 특정 값을 추출한다. 배열은 같은 종류의 값을 저장할 때는 효과적이다. 여러 종류의 값을 저장할 때는 객체가 효과적이다. 
+        console.log(obj["name"]) // 다른 접근 방식. 권장X
+
+        // 객체의 값을 변경하기
+        obj.name = "yyw"
+        obj["name"] = "steph curry"
+
+        var obj2 = [{name : "yyw", age : 20}, {name : "성관", age : 20}]
+        // obj2에서 성관만 추출
+        
+    </script>
+</body>
+</html>

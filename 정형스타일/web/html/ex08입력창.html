@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        .sty{
+            background-color: red;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form action="test.html">
+        <span>아이디 : </span>
+        <input type="text" placeholder="이름을 작성하세요~" maxlength="5" value="강성관">
+        <br>
+        <span>비밀번호 : </span>
+        <input type="password">
+        <br>
+        <span>축구</span><input type="checkbox" name="hobby" value="soc">
+        <span>농구</span><input type="checkbox" name="hobby" value="bas">
+        <br>
+        <span>남자</span><input type="radio" name="gender" value="남자">
+        <span>여자</span><input type="radio" name="gender" value="여자">
+        <br>
+        <input type="color">
+        <br>
+        <input type="date"><input type="datetime-local">
+        <br>
+        <input type="file">
+        <br>
+        <select>
+            <option>메일선택</option>
+            <option>naver.com</option>
+            <option>daum.net</option>
+        </select>
+        <br>
+        <textarea cols="50" rows="5"></textarea>
+        <input type="range">
+        <br>
+        <input type="reset">
+        <input type="submit">
+        <table>
+            <tr class="tr_col">
+                <th colspan="2">Step 1 : 아이디,비밀번호 입력</th>
+            </tr>
+            <tr class="tr_con">
+                <td >아이디</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr class="tr_con">
+                <td >비밀번호</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr class="tr_con">
+                <td >비밀번호 확인</td>
+                <td><input type="password"></td>
+            </tr>
+    
+            <tr class="tr_col">
+                <th colspan="2">개인정보</th>
+            </tr>
+            <tr class="tr_con">
+                <td >성별</td>
+                <td>
+                    남<input type="radio" name="gender">
+                    여<input type="radio" name="gender">
+                </td>
+            </tr>
+            <tr class="tr_con">
+                <td >혈액형</td>
+                <td><select >
+                    <option>A형</option>
+                    <option>B형</option>
+                </select></td>
+            </tr>
+            <tr class="tr_con">
+                <td >생일</td>
+                <td><input type="date"></td>
+            </tr>
+    
+            <tr class="tr_col">
+                <th colspan="2">선호도</th>
+            </tr>
+            <tr class="tr_con">
+                <td >취미</td>
+                <td>축구<input type="checkbox">야구<input type="checkbox">농구<input type="checkbox"></td>
+            </tr>
+            <tr class="tr_con">
+                <td >색깔</td>
+                <td><input type="color"></td>
+            </tr>
+    
+            <tr class="tr_col">
+                <th colspan="2">하고 싶은말</th>
+            </tr>
+    
+            <tr>
+                <td colspan="2">
+                    <textarea cols="57" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr >
+                <td  colspan="2"><input type="submit"><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

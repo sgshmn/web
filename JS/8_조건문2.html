@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 당신은 카카오 본사의 면접관 입니다.
+        // 이번 신입공채로 총 1명이 지원 하였습니다.
+        // 이번 공채에는 프론트앤드 개발자를 채용할 예정입니다.
+        // 필수 능력은 html,javascript 입니다
+        // 지원자의 기술 stack중 2가지 모두 만족하는 사람만 채용할 수 있는 로직을 작성해주세요.
+        // ★조건★
+        // 1. 2가지 모두 보유한 사람은 합격통보
+        // 2. 1가지를 보유한 사람은 예비통보
+        // 3. 그 외는 탈락통보
+        var yyw = ["python", "html", "java", "oracle db"]
+
+        // 만약에 사용자의 기술중에 html과 javascript가 있나요? includes
+        // 2가지 다 성립하면 합격 alert로 출력 &&?
+        // 1가지만 성립하면 예비 ||?
+        // 하나도 없다면 탈락
+
+        var cnt = 0;
+
+        yyw.includes("html") ? cnt++ : null
+        yyw.includes("javascript") ? cnt++ : null
+        
+
+        if (cnt == 0) {
+            alert("탈락")
+        } else if (cnt == 1) {
+            alert("예비")
+        } else if (cnt >= 2) {
+            alert("합격")
+        } else {
+            alert("??")
+        }
+
+
+
+    </script>
+</body>
+</html>

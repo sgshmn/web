@@ -1,0 +1,22 @@
+div{
+    width:200px;
+    height:200px;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#div1{
+    background-color:red;
+}
+#div2{
+    margin-left:200px;
+    background-color:hotpink;
+}
+#div3{
+    margin-left:400px;
+    background-color:aqua;
+}
+#div4{
+    margin-left:600px;
+    background-color:burlywood;
+}

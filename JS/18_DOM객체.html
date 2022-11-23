@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        DOM객체는 HTML의 모든 태그, 속성, 글자를 나눈다
+        ex) <h1 id='h1tag'>h1태그</h1> -> <h1>(태그), h1tag(값), h1태그(내용)
+        각각의 태그, 속성, 글자에 접근하기 위해 나눈다
+     -->
+    <h1 id='h1tag'>
+        <span>h1태그</span>
+    </h1>
+    <p class="ptag">문단태그</p>
+    <p class="ptag">문단태그</p>
+
+    <script>
+        
+        // 할일 : id가 h1tag인 요소의 내용을 추출하고 수정
+        // Step1
+        // 1. 모든 html문서의 정보를 담고있는 것에 정보를 요청 document
+        // 2. 명령문 작성(id가 h1tag인 요소를 가져와!) get element by id > 
+        // 3. document.getElementById("h1tag")
+        var h1tag = document.getElementById("h1tag")
+        console.log("가져온 요소:", h1tag)
+
+        // Step2
+        // 1. 가져온 h1요소에서 내용을 추출하기
+        // 2. 명령문 작성(요소에 잇는 html 또는 text를 보여줘!)
+        var htmldata = h1tag.innerHTML
+        var textdata = h1tag.innerText
+
+        console.log("innerHTML:", htmldata) // <span>h1태그</span>
+        console.log("innertext:", textdata) // h1태그
+
+        // Step3
+        // 1. 가져온 h1요소에서 내용을 수정하기
+
+        h1tag.innerHTML = "<p>안녕하세요</p>"
+        // h1tag.innerText = "<p>안녕하세요</p>"
+
+        // 할일 : class가 ptag인 요소의 내용을 추출하고 수정
+        // class는 중복이 되는 선택자이기 때문에 'getElement'가 아니라 'getElements' 로 쓴다.
+        // 리턴 데이터 타입은 배열이랑 비슷하다. 유사배열이라고 부른다?
+        var ptags = document.getElementsByClassName("ptag")
+        console.log("가져온 요소:", ptags) // 유사배열?
+
+        // 2. 컨텐츠를 수정
+        var text = ptags[0].innerHTML
+        console.log("내용:", text)
+
+    </script>
+</body>
+</html>

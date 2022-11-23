@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // String을 Number로
+        // 정수형 변환 -> parseInt("문자");
+        // 실수형 변환 -> parseFloat("문자");
+        // 숫자형 변환 -> Number("문자");
+
+        let textInt = "10";
+        let textFloat = "10.4";
+        let textNumber = "23";
+
+        let num1 = parseInt(textInt);
+        let num2 = parseFloat(textFloat);
+        let num3 = Number(textNumber);
+
+
+        console.log(textInt);
+        console.log(num1); // 콘솔창에 뜨는 내용의 색깔이 다르다
+
+        // number -> String
+        // number.toString(n); -> n진수 변환가능
+        // String(number)
+        let number = 10;
+        let string = number.toString(2);
+        let string2 = String(number);
+
+        console.log(string);
+        console.log(string2)
+
+    </script>
+</body>
+</html>

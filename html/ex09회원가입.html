@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <table>
+        <tr class="title">
+            <th colspan="2">step1: 아이디/비번 입력</th>
+        </tr>
+        <tr class="detail">
+            <td>아이디</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="detail">
+            <td>비밀번호</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr class="detail">
+            <td>비밀번호 확인</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr class="title">
+            <th colspan="2">step2: 개인정보</th>
+        </tr>
+        <tr class="detail">
+            <td >성별</td>
+            <td>
+                <span>남</span><input type="radio" name="sex">
+                <span>여</span><input type="radio" name="sex">
+            </td>
+        </tr>
+        <tr class="detail">
+            <td>혈액형</td>  <td>
+                <select>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>AB</option>
+                    <option>O</option>
+                </select></td>
+        </tr>
+        <tr class="detail">
+            <td>생일</td>
+            <td><input type="date"></td>            
+        </tr>
+        <tr class="title">
+            <th colspan="2">step3: 선호도</th>
+        </tr>
+        <tr class="detail">
+            <td>취미</td>
+            <td>
+                축구<input type="checkbox">
+                야구<input type="checkbox">
+                농구<input type="checkbox">
+            </td>
+        </tr>
+        <tr class="detail">
+            <td>좋아하는 색깔</td>
+            <td>
+                <input type="color">
+            </td>
+        </tr>
+        <tr class="title">
+            <th colspan="2">step4: 적고 싶은 말</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea cols="56" rows="4"></textarea>
+            </td>
+        </tr>
+        <tr class="detail">
+            <td colspan="2">
+                <input type="submit"><input type="reset">
+            </td>
+        </tr>
+
+
+
+    </table>
+</body>
+</html>

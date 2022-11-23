@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt">DOM을 조작해서 CSS 수정하기</h1>
+    <button id="btn">스타일 변경!</button>
+    
+    
+    <script>
+        // 버튼을 눌러서 h1 태그의 스타일을 바꾸자
+        function change() {
+            // 아이디가 txt인 요소의 글자색을 빨강으로 바꾸자
+            console.log("스타일 속성", document.getElementById("txt").style)
+            document.getElementById("txt").style.color = "red"
+            // 모든 속성은 Camel Case로 쓴다 - 가 연산이기 때문에
+            // css에서는 중간에 하이픈-이 들어간다
+            document.getElementById("txt").style.backgroundColor = "yellow"
+        }
+
+        document.getElementById("btn").addEventListener("click", change)
+        
+
+    </script>
+</body>
+</html>

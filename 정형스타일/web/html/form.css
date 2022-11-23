@@ -1,0 +1,18 @@
+table{
+    width: 400px;
+}
+.tr_col{
+    background-color: gray;
+    height: 50px;
+}
+.tr_con{
+    background-color: whitesmoke;
+    height: 35px;
+}
+.tr_con > td:nth-child(1){
+    text-align: right;
+}
+tr:last-child{
+    background-color: whitesmoke;
+    text-align: center;
+}

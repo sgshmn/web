@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 할일 : 사용자에게 2개의 값을 입력받는다. 2개의 값을 더한값을 콘솔창에 출력
+        // step1
+        // 사용자에게 2개의 값을 입력받고 각각 변수에 저장
+
+        let n1 = Number(prompt("n1"));
+        let n2 = Number(prompt("n2"));
+
+        console.log(n1, n2)
+
+        // 2. n1과 n2 더하기 연산을 콘솔에 출력
+
+        console.log(n1 + n2);
+        console.log(n1 - n2); // 위에 Number를 떼고 이걸 해보자. 이런거 조심해야 한다. 곱하기 나누기 등도 된다
+
+        // 3. prompt의 리턴타입을 String에서 number로 바꿔서 더하기 연산
+
+        let result = n1 + n2;
+
+        console.log(result)
+
+    </script>
+</body>
+</html>

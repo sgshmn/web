@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_txt">
+    <button id="btn" onclick="input_val()">입력 가져오기</button>
+    <br>
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDFfMjAg%2FMDAxNjE3MjA5Mzk1NTYx.W5D2IFJwrqFrbcrfpG09nUumbtQ7fz8MB9zhPhWYjQog.ylPL32n6Bfz5xA5c3IbLuba3km2E-1BK5YiUUBV8EDIg.JPEG.zzzsoft%2FFB%25A3%25DFIMG%25A3%25DF1603898314782.jpg&type=sc960_832" id="img">
+    <button id="btn_img" onclick="img_val()">이미지 경로 가져오기</button>
+    
+    <script>
+        function input_val() {
+            var val = document.getElementById("input_txt").innerHTML
+            console.log(val)
+            // input태그는 innerHTML을 쓰지 않는다
+            // 내용이 없기 때문
+
+            var val2 = document.getElementById("input_txt").value
+            console.log(val2)
+        }
+
+        function img_val() {
+            // 이미지 태그의 src속성 가져오기!
+            var src = document.getElementById("img").getAttribute("src")
+            console.log("이미지 src", src)
+            document.getElementById("img").setAttribute("src", "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAyMTBfMTY1%2FMDAxNjQ0NDk2NDg5NjQ1.UWq8q_iBikUO-4wpgyD5wtIA-zy6YqY3PTLXcoLx7S4g.8MD-53OUExvfeEdsDTHHmHTL9mG60egFm_X2NU7ZeNkg.PNG.blazingjtl%2F%25B0%25F5%25C0%25CC%25B8%25F0%25C6%25BC%25C4%25DC_220210-19.png&type=sc960_832")
+        }
+
+
+    </script>
+</body>
+</html>

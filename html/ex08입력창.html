@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test.html"> <!--form 초기화, 제출할 때 범위를 지정한다. action은 저장공간이다-->
+        <span>이름 : </span>
+        <input type="text" placeholder="asd" maxlength="5"> <!--input에서 입력된 값은 value에 저장한다.-->
+        <br>
+        <span>비밀번호 : </span>
+        <input type="password">
+        <br>
+        <span>축구</span><input type="checkbox">
+        <span>농구</span><input type="checkbox">
+        <br>
+        <span>남자</span><input type="radio" name="gender" value="male">
+        <span>여자</span><input type="radio" name="gender" value="female">
+        <br>
+        <input type="color">
+        <input type="date">
+        <br>
+        <input type="file">
+        <br>
+        <select>
+            <option>number</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <br><br>
+
+        <textarea cols="50" rows="4"></textarea><!--얘는 특이하게도 가로길이 속성이 width가 아님-->
+        <input type="range">
+        <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

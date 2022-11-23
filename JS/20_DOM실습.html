@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        👍<span id="number">0</span>
+    </p>
+    <button id="like">좋아요</button>
+    <button id="hate">싫어요</button>
+
+    <script>
+        // 해야할 일 : 좋아요, 싫어요 버튼을 눌렀을 때 span의 값이 1씩 증가, 1씩 감소하는 로직 만들기
+        // Step1
+        // like, hate 함수 만들기
+        // 각각 버튼에 이벤트를 부여
+
+        // Step2
+        // like,hate버튼을 각각 클릭시, span태그의 컨텐츠 값(0)을 콘솔창에 출력해 보시오
+        
+        var btn_like = document.getElementById("like")
+        var btn_hate = document.getElementById("hate")
+        var span_number = document.getElementById("number")
+
+        function like() {
+            span_number.innerText++
+        }
+
+        function hate() {
+            span_number.innerText--
+        }
+
+        btn_like.addEventListener("click", like)
+        btn_hate.addEventListener("click", hate)
+
+    </script>
+</body>
+</html>
